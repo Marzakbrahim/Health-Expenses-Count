@@ -1,0 +1,24 @@
+      **************************************************************
+      *
+      *     CLAUSE COPY DU CONVERTISSEUR DE DATE CONVDATE
+      *
+      **************************************************************
+      *--   Données en entrée Date au format SSAAQQQ
+           05 DATCNV-DatEnt-SSAAQQQ               PIC 9(7).
+
+      *--   Données en sortie Date au format SSAAMMJJ   
+           05 DATCNV-DatSor-SSAAMMJJ.
+              10 DATCNV-DatSor-SSAA               PIC X(4).
+              10 DATCNV-DatSor-MM                 PIC X(2).
+              10 DATCNV-DatSor-JJ                 PIC X(2).    
+      
+      
+      *--   Données en sortie Date au format SSAAMMJJ   
+           05 DATCNV-DatSor-CodErr                PIC X(2).
+              88 DATCNV-DatSor-CodErr-OK          VALUE '00'.
+   
+      *--   Données en sortie Date au format SSAAMMJJ   
+           05 DATCNV-DatSor-LibErr                PIC X(80).
+      *
+    
+   
